@@ -1,0 +1,664 @@
+*,
+*:after,
+*:before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family: Adobe-Garamond-Pro;
+	src: url(../fonts/adobe-garamond-pro.ttf) format("truetype");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap
+}
+
+
+/*---Communs---*/
+
+body {
+	font-family: Adobe-Garamond-Pro, sans-serif;
+	margin: 0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	transition: color .4s ease;
+}
+
+a:hover {
+	transition: color .4s ease;
+}
+
+html ::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
+}
+
+html ::-webkit-scrollbar-button {
+	display: none;
+}
+
+html ::-webkit-scrollbar-corner {
+	background-color: #999;
+}
+
+html ::-webkit-scrollbar-thumb {
+	background-color: #ff67b3;
+	border-radius: 0;
+}
+
+html ::-webkit-scrollbar-track-piece {
+	background-color: #eaeaea;
+}
+
+
+/*---FIN de Communs---*/
+
+
+/*---Header---*/
+
+.header {
+	padding-bottom: 35%;
+	background-image: url("../images/paysage(5).jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+.header-menu {
+	background-color: #1f1f1fb3;
+	display: flex;
+	width: 100%;
+	padding: 25px 50px;
+}
+
+.header-menu>* {
+	align-self: center;
+}
+
+.header-logo {
+	padding-right: 5rem;
+	flex: 30%;
+}
+
+.logo-image {
+	width: 250px;
+	transition: transform .4s;
+}
+
+.logo-image:hover {
+	-ms-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.header-nav {
+	flex: 70%;
+}
+
+.nav-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+}
+
+.nav-item {
+	margin-right: 60px;
+}
+
+.nav-link {
+	color: white;
+	text-transform: uppercase;
+}
+
+.nav-link:hover {
+	color: #ff67b3;
+}
+
+
+/*---FIN de Header---*/
+
+
+/*---Main---*/
+
+
+/*---Présentation---*/
+
+.presentation {
+	max-width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 3rem;
+}
+
+.presentation>h2 {
+	font-size: 30px;
+	color: #93117e;
+	text-transform: none;
+	text-align: center;
+	padding-bottom: 3rem;
+}
+
+.presentation>p {
+	font-size: 20px;
+	color: #1f1f1f;
+	text-align: center;
+}
+
+
+/*---FIN de Présentation---*/
+
+
+/*---Carousel---*/
+
+.carousel {
+	margin-top: 3rem;
+	background-image: url("../images/paysage(8).jpeg");
+	background-size: cover;
+	background-position: center;
+}
+
+.carousel>* {
+	background-color: #7e016acc;
+	padding: 60px 0px;
+}
+
+.mySlides>img,
+demo {
+	vertical-align: middle;
+}
+
+.carousel-container {
+	position: relative;
+	max-width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+	box-shadow: 0 0 2em #fdbfde;
+}
+
+.mySlides {
+	display: none;
+}
+
+.cursor {
+	cursor: pointer;
+}
+
+.prev,
+.next {
+	cursor: pointer;
+	position: absolute;
+	top: 40%;
+	width: auto;
+	padding: 16px;
+	margin-top: -50px;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+	-webkit-user-select: none;
+	transition: background-color, color .4s ease;
+}
+
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+	transition: background-color .4s ease, color .4s ease;
+	background-color: #1f1f1fcc;
+	color: #ff67b3;
+}
+
+.row {
+	top: 2%;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.column {
+	float: left;
+	width: 20%;
+}
+
+.demo {
+	opacity: 0.6;
+	transition: opacity .4s ease;
+}
+
+.active,
+.demo:hover {
+	opacity: 1;
+	transition: opacity .4s ease;
+}
+
+
+/*---FIN de Carousel---*/
+
+
+/*---Sponsor---*/
+
+.sponsor {
+	max-width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.sponsor-images {
+	height: 10rem;
+}
+
+
+/*---FIN de Sponsor---*/
+
+
+/*---Accès---*/
+
+.acces {
+	max-width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 3rem;
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: -5px;
+}
+
+.acces-title {
+	flex: 100%;
+}
+
+.acces-title>h2 {
+	font-size: 30px;
+	color: #93117e;
+	text-align: center;
+	text-transform: none;
+	padding-bottom: 2rem;
+}
+
+.acces-section {
+	flex: 50%;
+}
+
+.acces-section2 {
+	padding-left: 2%;
+}
+
+.acces-section1 {
+	padding-right: 2%;
+}
+
+.acces-section>h3 {
+	font-size: 20px;
+	color: #ff67b3;
+	text-transform: uppercase;
+	padding-bottom: 1rem;
+}
+
+.acces-section>p {
+	font-size: 20px;
+	color: #1f1f1f;
+	text-align: justify;
+	padding-bottom: 1.5rem;
+}
+
+.acces-link {
+	color: #93117e;
+}
+
+.acces-link:hover {
+	color: #ff67b3;
+}
+
+.acces-map {
+	flex: 100%;
+}
+
+.map {
+	width: 100%;
+	height: 600px;
+}
+
+
+/*---FIN de Accès---*/
+
+
+/*---Tarif et Horaire---*/
+
+.tarif {
+	background-image: url("../images/paysage(7).jpeg");
+	background-size: cover;
+	background-position: center;
+}
+
+.tarif>* {
+	background-color: #7e016acc;
+	padding: 60px 0px;
+}
+
+.tarif-container {
+	max-width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.tarif-section {
+	flex: 45%;
+	box-shadow: 0 0 1rem #fdbfde;
+	background-color: #fdbfde;
+	padding: 3%;
+}
+
+.tarif-section2 {
+	margin-left: 2%;
+}
+
+.tarif-section1 {
+	margin-right: 2%;
+}
+
+.tarif-section>h2 {
+	font-size: 30px;
+	color: #93117e;
+	text-align: center;
+	text-transform: none;
+	padding-bottom: 1rem;
+}
+
+.tarif-section>h3 {
+	font-size: 20px;
+	color: #ff67b3;
+	text-transform: uppercase;
+	padding-top: 1.5rem;
+	padding-bottom: 1rem;
+}
+
+.tarif-section>p {
+	font-size: 20px;
+	color: #1f1f1f;
+	text-align: justify;
+	padding-bottom: 1rem;
+}
+
+.tarif-section>ul {
+	list-style: square;
+	list-style-position: inside;
+}
+
+.tarif-link {
+	color: #93117e;
+}
+
+.tarif-link:hover {
+	color: #ff67b3;
+}
+
+
+/*---FIN de Tarif et Horaire---*/
+
+
+/*---FIN de Main---*/
+
+
+/*---Footer---*/
+
+.footer {
+	background-image: url("../images/paysage(3).jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+.footer>* {
+	background-color: #1f1f1fcc;
+	padding: 75px 0px;
+}
+
+.footer-content {
+	max-width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.footer-column {
+	flex-basis: 0;
+	flex-grow: 1;
+	max-width: 100%;
+	padding: 0px 15px;
+}
+
+.footer-column-title {
+	color: #93117e;
+	margin-bottom: 36px;
+	font-size: 32px;
+}
+
+.footer-address {
+	margin-bottom: 10px;
+	font-size: 18px;
+	color: white;
+}
+
+.footer-phone {
+	font-size: 18px;
+	color: white;
+}
+
+.footer-phone:hover {
+	color: #ff67b3;
+}
+
+.footer-item {
+	margin-bottom: 15px;
+}
+
+.footer-link {
+	color: white;
+	font-size: 18px;
+}
+
+.footer-link:hover {
+	color: #ff67b3;
+}
+
+.footer-social {
+	justify-content: flex-end;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.social-item+.social-item {
+	margin-left: 24px;
+}
+
+.social-link {
+	display: flex;
+	width: 40px;
+	height: 40px;
+	justify-content: center;
+	border: solid 1px white;
+	border-radius: 50%;
+	transition: border-color .3s ease, background-color .3s ease;
+	background-size: 55%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.social-link:hover {
+	transition: border-color .3s ease, background-color .3s ease;
+	border-color: #ff67b3;
+	opacity: 0.7;
+}
+
+.social-link-facebook {
+	background-image: url("../images/facebook.png");
+}
+
+.social-link-instagram {
+	background-image: url("../images/instagram.png");
+}
+
+.social-link-tripadvisor {
+	background-image: url("../images/tripadvisor.png");
+}
+
+
+/*---FIN de Footer---*/
+
+
+/*---Bouton Top---*/
+
+.bouton-top {
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	z-index: 99;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 10px 10px 10px 10px;
+	border-radius: 50%;
+	box-shadow: 1px 1px 5px #000;
+	background-color: #ff67b3;
+	background-image: url("../images/arrow-up.svg");
+	background-size: 55%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.bouton-top:hover {
+	background-color: #93117e;
+	transition: background-color .3s ease;
+}
+
+
+/*---Fin de Bouton Top---*/
+
+
+/*---Responsive Tablette---*/
+
+@media screen and (max-width: 50rem) {
+	.nav-item {
+		margin-bottom: 5px;
+	}
+	.header-logo {
+		padding-right: 0;
+	}
+	.presentation>p {
+		padding: 0% 5%;
+	}
+	.carousel>* {
+		padding: 0px;
+	}
+	.carousel-container {
+		box-shadow: none;
+	}
+	.sponsor-images {
+		height: 6rem;
+	}
+	.acces-section {
+		flex: 100%;
+	}
+	.acces-section2 {
+		padding-left: 0%;
+	}
+	.acces-section1 {
+		padding-right: 0%;
+	}
+	.acces-section>h3,
+	p {
+		padding: 0% 5%;
+	}
+	.map {
+		height: 400px;
+	}
+	.footer-column:last-child {
+		flex: 0 0 100%;
+	}
+	.footer-column-title {
+		margin-bottom: 30px;
+	}
+	.footer-link,
+	.footer-phone,
+	.footer-address {
+		font-size: 14px;
+	}
+	.footer-social {
+		justify-content: flex-start;
+	}
+}
+
+
+/*---Fin Responsive Tablette---*/
+
+
+/*---Responsive Mobile---*/
+
+@media screen and (max-width: 30rem) {
+	.header-menu {
+		padding: 12px 25px;
+	}
+	.nav-item {
+		margin-right: 0px;
+		margin-bottom: 3px;
+		flex: 35%;
+	}
+	.nav-link {
+		font-size: 15px;
+	}
+	.presentation>p {
+		font-size: 18px;
+	}
+	.sponsor-images {
+		height: 3.5rem;
+	}
+	.acces-section>p {
+		font-size: 18px;
+	}
+	.map {
+		height: 360px;
+	}
+	.tarif>* {
+		padding: 0px;
+	}
+	.tarif-section {
+		flex: 100%;
+		margin: 2%;
+	}
+	.footer-column {
+		flex: 0 0 100%;
+	}
+	.social-item+.social-item {
+		margin-left: 16px;
+	}
+}
+
+
+/*---Fin Responsive Mobile---*/
